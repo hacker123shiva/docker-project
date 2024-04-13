@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  flask:
+    build: ./server1
+    restart: always
+    ports:
+      - '5000:5080'
+    depends_on:
+      - spring-boot
+    image: shiva-flask-server
+    networks:
+      - s_network
+
+  spring-boot:
+    build: ./server2/myserver
+    restart: always
+    ports:
+      - '8080:8080'
+    image: shiva-springboot-server
+    networks:
+      - s_network
+
+networks:
+  s_network:
+    driver: bridge
