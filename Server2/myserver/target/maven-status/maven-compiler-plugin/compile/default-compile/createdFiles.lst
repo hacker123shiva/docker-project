@@ -1,0 +1,7 @@
+com\server\myserver\entities\Message.class
+com\server\myserver\controller\HomeController.class
+com\server\myserver\controller\SentimentController.class
+com\server\myserver\config\SentimentConfig.class
+com\server\myserver\entities\Sentiment.class
+com\server\myserver\MyserverApplication.class
+com\server\myserver\service\SentimentService.class

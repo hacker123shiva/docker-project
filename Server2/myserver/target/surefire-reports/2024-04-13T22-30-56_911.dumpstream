@@ -1,0 +1,5 @@
+# Created at 2024-04-13T22:30:57.345
+Boot Manifest-JAR contains absolute paths in classpath 'd:\telusko\Communication-Server\flask_app\Server2\myserver\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
