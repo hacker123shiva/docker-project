@@ -8,7 +8,7 @@ services:
       - '5000:5080'
     depends_on:
       - spring-boot
-    image: shiva-flask-server
+    image: hacker123shiva/shiva-flask-server
     networks:
       - s_network
 
@@ -17,10 +17,9 @@ services:
     restart: always
     ports:
       - '8080:8080'
-    image: shiva-springboot-server
+    image: hacker123shiva/shiva-springboot-server
     networks:
       - s_network
 
 networks:
   s_network:
-    driver: bridge

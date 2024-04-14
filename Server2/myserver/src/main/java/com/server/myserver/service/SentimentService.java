@@ -1,7 +1,7 @@
 package com.server.myserver.service;
 
-import org.springframework.http.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -15,7 +15,7 @@ public class SentimentService {
 
     public Sentiment getSentiment(Message msg) {
         return client.post()
-                .uri("/analyze")
+                .uri("http://127.0.0.1:5080/analyze")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(msg)
                 .retrieve()
